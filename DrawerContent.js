@@ -27,7 +27,6 @@ const DrawerContent = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 40,
   },
   drawerItem: {
     padding: 10,
