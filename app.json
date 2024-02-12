@@ -1,4 +1,36 @@
 {
-  "name": "MyCulinaryCraftsApp",
-  "displayName": "MyCulinaryCraftsApp"
+  "expo": {
+    "name": "my-culinary-craft-app",
+    "slug": "my-culinary-craft-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f2a0a5b9-8187-4cba-9125-2acd452e06cf"
+      }
+    },
+    "owner": "tehreemh1993"
+  }
 }

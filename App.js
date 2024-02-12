@@ -1,23 +1,20 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreen from './src/screens/HomeScreen.js';
-import RestaurantScreen from './src/screens/RestaurantScreen';
-import CartScreen from './src/screens/CartScreen';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
-const Stack = createStackNavigator();
-
-const App = () => {
+export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Restaurants' }} />
-        <Stack.Screen name="Restaurant" component={RestaurantScreen} options={({ route }) => ({ title: route.params.name })} />
-        <Stack.Screen name="Cart" component={CartScreen} options={{ title: 'Your Cart' }} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
   );
-};
+}
 
-export default App;
-
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
